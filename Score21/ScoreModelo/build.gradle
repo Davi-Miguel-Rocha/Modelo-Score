@@ -1,0 +1,32 @@
+plugins {
+	id 'java'
+	// 💡 OBRIGATÓRIO: Este plugin define o bloco 'application'
+	id 'application'
+}
+
+group = 'ScoreModelo'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+java {
+	// Garante que a compilação use o Java 21, conforme exigido.
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+dependencies {
+	// DL4J e ND4J (rede neural e backend nativo)
+	implementation 'org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1'
+	implementation 'org.nd4j:nd4j-native-platform:1.0.0-M2.1'
+	implementation 'org.slf4j:slf4j-simple:2.0.9'
+}
+
+// O bloco 'application' agora deve ser reconhecido
+application {
+	// Usando o caminho exato da sua classe Main
+	mainClass = 'ScoreModelo.ScoreModelo.example.Main'
+}
