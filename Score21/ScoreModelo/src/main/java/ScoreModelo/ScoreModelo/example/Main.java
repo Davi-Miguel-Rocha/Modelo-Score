@@ -19,7 +19,7 @@ import org.deeplearning4j.util.ModelSerializer; //IMPORTANTE: pra salvar o model
 import java.io.FileOutputStream; // NOVO IMPORT
 import java.io.ObjectOutputStream; // NOVO IMPORT
 
-//PRA DAR RUN NO CÓDIGO, DIGITE ./gradlew run NO TERMINAL.
+//PRA DAR RUN NO CÓDIGO, DIGITE ./gradlew run NO TERMINAL se estiver no Linux e .\gradlew run se estiver no windows.
 
 public class Main {
 
