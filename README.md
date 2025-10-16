@@ -15,6 +15,7 @@ O modelo é treinado usando Java e a arquitetura é otimizada para tarefas de re
 * **Pré-processamento:** Normalização Z-Score (`NormalizerStandardize`) aplicada aos dados.
 * **Resultado:** Previsão de um score final que é "clipado" (limitado) entre **300 e 1000**.
 * **Produção:** O modelo treinado e o objeto de normalização são salvos em `.zip` e `.bin` para uso em inferência em produção.
+* * **Versão do Java:** O modelo  foi feito em Java 17, portanto, é necessário rodar o código com essa versão do Java.
 
 ## 🏗️ Arquitetura da Rede Neural
 
